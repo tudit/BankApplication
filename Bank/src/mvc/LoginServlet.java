@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException 
+	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException 
 	{
 		Statement st;
 		int ac_no = Integer.parseInt(req.getParameter("acNo"));

@@ -1,6 +1,6 @@
 function validate(){
 	
-	var Name = document.getElementById("name").value;
+	var Name = document.getElementById("accName").value;
 	var dob = document.getElementById("dob").value;
 	var phno = document.getElementById("phoneNo").value;
 	var city = document.getElementById("city").value;

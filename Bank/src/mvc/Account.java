@@ -1,6 +1,14 @@
 package mvc;
 
-public class Account {
+/*
+ * Account bean class which contains all the details of an account viz. balance , account number, account holder's name etc. 
+ * All the attributes are private and suitable getters and setters have been added to facilitate accessing them.
+ * Camel case naming convention has been followed for the variables, which will further be used in the jsp 
+ */
+
+
+public class Account 
+{
 	
 	private String accNo;
 	private String accName;
@@ -13,120 +21,131 @@ public class Account {
 	private String houseNo;
 	private String street;
 	private String email;
+	private double balance;
 	
-	public Account(){}
-		
-	
-	
-/*	
-	public void credit(float credit){
-		if(credit>=100)
-		bal+=credit;
-		else
-			System.out.println("Credit cannot be less than 100");
+	public Account()	//Default Constructor
+	{
+		super();
 	}
 	
-	public void debit(float debit)throws WithdrawalException{
-		if(bal-debit<1000)
-			throw new WithdrawalException();
-		else
-			bal-=debit;
+	//Getters and Setters
+	public double getBalance() 
+	{
+		return balance;
 	}
 	
-	//for testing
-	public void printDetails(){
-		System.out.println("Account Number: "+acc);
-		System.out.println("Name of the Account Holder: "+name);
-		System.out.println("Account Balance : "+bal);
-		System.out.println("----------------------------------------------------------\n\n");
+	public void setBalance(double balance) 
+	{
+		this.balance = balance;
 	}
-*/
-	public String getAccNo() {
+	
+	public String getAccNo() 
+	{
 		return accNo;
 	}
 
-	public void setAccNo(String accNo) {
+	public void setAccNo(String accNo) 
+	{
 		this.accNo = accNo;
 	}
 
-	public String getAccName() {
+	public String getAccName() 
+	{
 		return accName;
 	}
 
-	public void setAccName(String accName) {
+	public void setAccName(String accName) 
+	{
 		this.accName = accName;
 	}
 
-	public String getDob() {
+	public String getDob() 
+	{
 		return dob;
 	}
 
-	public void setDob(String dob) {
+	public void setDob(String dob) 
+	{
 		this.dob = dob;
 	}
 
-	public String getPhoneNo() {
+	public String getPhoneNo() 
+	{
 		return phoneNo;
 	}
 
-	public void setPhoneNo(String phoneNo) {
+	public void setPhoneNo(String phoneNo) 
+	{
 		this.phoneNo = phoneNo;
 	}
 
-	public String getGender() {
+	public String getGender() 
+	{
 		return gender;
 	}
 
-	public void setGender(String gender) {
+	public void setGender(String gender) 
+	{
 		this.gender = gender;
 	}
 
-	public String getCity() {
+	public String getCity() 
+	{
 		return city;
 	}
 
-	public void setCity(String city) {
+	public void setCity(String city) 
+	{
 		this.city = city;
 	}
 
-	public String getState() {
+	public String getState() 
+	{
 		return state;
 	}
 
-	public void setState(String state) {
+	public void setState(String state) 
+	{
 		this.state = state;
 	}
 
-	public String getCountry() {
+	public String getCountry() 
+	{
 		return country;
 	}
 
-	public void setCountry(String country) {
+	public void setCountry(String country) 
+	{
 		this.country = country;
 	}
 
-	public String getHouseNo() {
+	public String getHouseNo() 
+	{
 		return houseNo;
 	}
 
-	public void setHouseNo(String houseNo) {
+	public void setHouseNo(String houseNo) 
+	{
 		this.houseNo = houseNo;
 	}
 
-	public String getStreet() {
+	public String getStreet() 
+	{
 		return street;
 	}
 
-	public void setStreet(String street) {
+	public void setStreet(String street) 
+	{
 		this.street = street;
 	}
 
-	public String getEmail() {
+	public String getEmail() 
+	{
 		return email;
 	}
 
-	public void setEmail(String email) {
+	public void setEmail(String email) 
+	{
 		this.email = email;
 	}
-	
 }
