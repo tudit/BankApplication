@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class EmpServlet
  */
-public class ControllerServlet extends HttpServlet {
+public class RegisterationServlet extends HttpServlet {
 	private Connection conn;
 	private DAO dao;
 	private static final long serialVersionUID = 1L;
@@ -24,7 +24,7 @@ public class ControllerServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ControllerServlet() {
+    public RegisterationServlet() {
         super();
         // TODO Auto-generated constructor stub
     }

@@ -1,0 +1,4 @@
+com.mysql.jdbc.Driver
+jdbc:mysql://localhost/trng
+root
+tidu@114
