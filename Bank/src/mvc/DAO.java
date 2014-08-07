@@ -12,9 +12,10 @@ public class DAO {
 	private String pwd;
 	private Connection conn;
 	
-	public void connect() throws ClassNotFoundException, SQLException, IOException{
+	public void connect() throws ClassNotFoundException, SQLException, IOException
+	{
 		
-		FileReader reader=new FileReader("C:\\Users\\TUMUD01\\Documents\\ConnectionDetails.txt");
+		FileReader reader=new FileReader("C:\\Users\\LAHPI01\\Documents\\ConnectionDetails.txt");
 		BufferedReader bfr=new BufferedReader(reader);
 		
 		
@@ -29,23 +30,40 @@ public class DAO {
 		bfr.close();
 	}
 
-	public String getDriverName() {
+	public void finalize()
+	{
+		try 
+		{
+			conn.close();
+		} 
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public String getDriverName() 
+	{
 		return driverName;
 	}
 
-	public void setDriverName(String driverName) {
+	public void setDriverName(String driverName) 
+	{
 		this.driverName = driverName;
 	}
 
-	public String getURL() {
+	public String getURL() 
+	{
 		return URL;
 	}
 
-	public void setURL(String uRL) {
+	public void setURL(String uRL) 
+	{
 		URL = uRL;
 	}
 
-	public String getUserName() {
+	public String getUserName() 
+	{
 		return userName;
 	}
 
