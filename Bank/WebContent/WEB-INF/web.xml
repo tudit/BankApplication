@@ -6,13 +6,13 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>RegistrationServlet</display-name>
-    <servlet-name>RegistrationServlet</servlet-name>
-    <servlet-class>mvc.RegistrationServlet</servlet-class>
+    <display-name>ControllerServlet</display-name>
+    <servlet-name>ControllerServlet</servlet-name>
+    <servlet-class>mvc.ControllerServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>RegistrationServlet</servlet-name>
-    <url-pattern>/RegistrationServlet</url-pattern>
+    <servlet-name>ControllerServlet</servlet-name>
+    <url-pattern>/ControllerServlet</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
