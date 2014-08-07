@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="formStyle.css" />
+<title>NPCompete Bank</title>
+</head>
+<body >
+
+<div id="startupElements" class="elegant-aero">
+<h1>Welcome to NPC bank Home Page</h1>
+
+<p>For more information about the bank click the button below</p>
+<form class="elegant-aero">
+		<a href='AboutUs.html'>About Us</a>  
+</form >
+<p>For new user registration click on the 'Register' link below</p>
+<form>
+    <input TYPE="button" VALUE="Register" onclick="window.location.href='register.html'"> 
+</form>
+<p>For user sign-in click on the "Signin" link below</p>
+
+<form action="LoginServlet" class="elegant-aero">
+	<label>
+		<span>Account No.: </span>
+		<input type="text" name="acNo" />
+	</label>
+	<label>
+		<span>Password: </span> 
+		<input type="text" name="password" />
+	</label>
+	<label>	
+    	<input type="submit" name="signin" value="Login" /> 
+    </label>	
+</form>
+</div>
+</body>
+</html>

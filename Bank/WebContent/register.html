@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="formStyle.css" />
+<script type="text/javascript" src="formvalidation.js"></script>
+
+<title>Registration Form</title>
+</head>
+
+<body>
+	<form	onsubmit="return validate()" method="post" action="ControllerServlet" class="elegant-aero">
+		 <h1>Registration Form 
+        	<span>Please fill all the texts in the fields.</span>
+    	</h1>
+		<label>
+			<span>Name :</span>
+			<input type="text" id="name" name="name" onfocus="errorclear()" />
+		</label>
+		<label>
+			<span>Date Of Birth: </span>
+			<input type="text" id="dob" name="dob" onfocus="errorclear()" />
+		</label>
+		<label>
+			<span>Phone :</span>
+			<input type="text" id="phoneNo"  name="phoneNo" onfocus="errorclear()"/>
+		</label>
+		<label>
+			<span>Gender: </span>
+			<input type="text" id="gender" name="gender" onfocus="errorclear()" />
+		</label>
+		<label>
+			<span>House No: </span>
+			<input type="text" id="houseNo" name="houseNo" onfocus="errorclear()"/>
+		</label>
+		<label>
+			<span>Street: </span>
+			<input type="text" id="street" name="street" onfocus="errorclear()"/>
+		</label>
+		<label>
+			<span>City: </span>
+			<input type="text" id="city" name="city" onfocus="errorclear()"/>
+		</label>
+		<label>
+			<span>State: </span>
+			<input type="text" id="state" name="state" onfocus="errorclear()"/>
+		</label>
+		<label>
+			<span>Country: </span>
+			<input type="text" id="country" name="country" onfocus="errorclear()"/>
+		</label>		
+		<label>
+			<span>Email: </span>
+			<input type="text" id="email" name="email" onfocus="errorclear()"/>
+		</label>				
+		<input type="submit" name="Save" value="Submit">
+	</form>
+	<div id ="errorLog" class="errorLog">
+	</div>
+</body>
+</html>
+
